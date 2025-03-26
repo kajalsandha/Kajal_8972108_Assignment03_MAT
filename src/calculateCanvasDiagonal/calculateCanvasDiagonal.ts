@@ -1,12 +1,21 @@
-export default function calculateCanvasSize(length: string, width: string): number {
+export default function calculateCanvasDiagonal(length: any, width: any): number {
   // Validate inputs
-  if (!length || !width) return NaN;
-  if (isNaN(Number(length)) || isNaN(Number(width))) return NaN;
+  if (
+    isNaN(length) ||
+    isNaN(width) ||
+    length === null ||
+    width === null ||
+    length === '' ||  // Check for empty strings
+    width === ''      // Check for empty strings
+  ) {
+    return NaN;
+  }
 
-  // Convert to numbers
-  const len = Math.abs(Number(length));
-  const wid = Math.abs(Number(width));
+  // Handle zero values
+  if (length === 0 && width === 0) return 0;
 
-  return 2 * (len + wid);
+  // Calculate the diagonal using absolute values
+  return Math.sqrt(Math.pow(Math.abs(Number(length)), 2) + Math.pow(Math.abs(Number(width)), 2));
 }
+
 
