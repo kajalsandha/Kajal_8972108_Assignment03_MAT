@@ -1,0 +1,23 @@
+{
+  "name": "kajal_8972108_assignment03_mat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajalsandha/Kajal_8972108_Assignment03_MAT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kajalsandha/Kajal_8972108_Assignment03_MAT/issues"
+  },
+  "homepage": "https://github.com/kajalsandha/Kajal_8972108_Assignment03_MAT#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
